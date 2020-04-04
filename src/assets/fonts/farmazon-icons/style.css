@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'farmazon-icons';
+    src: url('fonts/farmazon-icons.ttf?4ywt0w') format('truetype'),
+        url('fonts/farmazon-icons.woff?4ywt0w') format('woff'),
+        url('fonts/farmazon-icons.svg?4ywt0w#farmazon-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.icons {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'farmazon-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icons-grid:before {
+    content: '\e904';
+}
+.icons-okay:before {
+    content: '\e901';
+}
+.icons-toolbar-orders:before {
+    content: '\e924';
+}
+.icons-toolbar-cart:before {
+    content: '\e925';
+}
+.icons-toolbar-profile:before {
+    content: '\e926';
+}
+.icons-toolbar-notifications:before {
+    content: '\e927';
+}
+.icons-toolbar-currency:before {
+    content: '\e928';
+}
+.icons-toolbar-plus:before {
+    content: '\e929';
+}
+.icons-toolbar-messages:before {
+    content: '\e92a';
+}
+.icons-times:before {
+    content: '\e923';
+}
+.icons-alert:before {
+    content: '\e922';
+}
+.icons-unchecked:before {
+    content: '\e909';
+}
+.icons-checked:before {
+    content: '\e921';
+}
+.icons-right-dart:before {
+    content: '\e91f';
+}
+.icons-question:before {
+    content: '\e920';
+}
+.icons-info:before {
+    content: '\e91e';
+}
+.icons-search:before {
+    content: '\e910';
+}
+.icons-list:before {
+    content: '\e916';
+}
+.icons-gridlist:before {
+    content: '\e917';
+}
+.icons-trash:before {
+    content: '\e91d';
+}
+.icons-extra-shipping-label:before {
+    content: '\e913';
+}
+.icons-extra-shipping:before {
+    content: '\e914';
+}
+.icons-kargo:before {
+    content: '\e915';
+}
+.icons-min100:before {
+    content: '\e91a';
+}
+.icons-listings:before {
+    content: '\e91b';
+}
+.icons-aciklama:before {
+    content: '\e91c';
+}
+.icons-fb:before {
+    content: '\e918';
+}
+.icons-ins:before {
+    content: '\e919';
+}
+.icons-sorting-down:before {
+    content: '\e911';
+}
+.icons-sorting-up:before {
+    content: '\e912';
+}
+.icons-left-arrow:before {
+    content: '\e90d';
+}
+.icons-right-arrow:before {
+    content: '\e90e';
+}
+.icons-action-required:before {
+    content: '\e900';
+}
+.icons-late:before {
+    content: '\e90f';
+}
+.icons-up-arrow:before {
+    content: '\e90c';
+}
+.icons-star:before {
+    content: '\e90b';
+}
+.icons-minus:before {
+    content: '\e907';
+}
+.icons-checked-simple:before {
+    content: '\e908';
+}
+.icons-plus:before {
+    content: '\e90a';
+}
+.icons-close:before {
+    content: '\e902';
+}
+.icons-down-arrow:before {
+    content: '\e903';
+}

@@ -1,0 +1,14 @@
+{
+    "statusCode": 200,
+    "statusMessage": "OK",
+    "result": {
+        "user": {
+            "userId": 17283,
+            "username": "mcakir",
+            "fullname": "Mustafa Çakır",
+            "email": "mustafa@farmazon.com.tr",
+            "phone": "0 (533) 572 1004"
+        }
+    },
+    "errors": null
+}

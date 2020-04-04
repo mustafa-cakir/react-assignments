@@ -1,0 +1,100 @@
+.btn {
+	-webkit-appearance: none;
+	background-image: linear-gradient(to left, #2e1098, #240e6f);
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font: inherit;
+	font-size: 14px;
+	-webkit-font-smoothing: inherit;
+	line-height: 1.42857143;
+	margin: 0;
+	-moz-osx-font-smoothing: inherit;
+	outline: none;
+	overflow: visible;
+	padding: 5px 15px 7px;
+	text-align: center;
+	width: auto;
+	&:not(:disabled):hover {
+		background-color: #1a0758;
+		background-image: none;
+	}
+	&.ghost {
+		background: none;
+		padding: 4px 15px 6px;
+		transition: background-color 0.2s linear;
+		border-color: #2e1098;
+		color: #2e1098;
+		&:hover {
+			background-color: #1a0758;
+			border-color: #1a0758;
+			color: #fff;
+		}
+		&.disabled,
+		&:disabled {
+			border-color: #ddd;
+			color: #999;
+			cursor: not-allowed;
+			&:hover {
+				background: none;
+				color: #999;
+			}
+		}
+	}
+	&.disabled,
+	&:disabled {
+		background: #ddd;
+		color: #999;
+		cursor: not-allowed;
+		&:hover {
+			background: #ddd;
+			color: #999;
+		}
+	}
+	&.is-block {
+		display: block;
+	}
+	&.width-100 {
+		width: 100%;
+	}
+	&.link {
+		background: none;
+		border-bottom: 1px solid transparent;
+		border-radius: 0;
+		color: #2e1098;
+		display: inline;
+		padding: 0;
+		text-align: left;
+		transition: border-bottom-color 0.2s linear;
+		&:hover {
+			background-color: transparent;
+			border-bottom-color: #2e1098;
+		}
+	}
+}
+
+.text {
+	&-light {
+		font-weight: 300;
+	}
+	&-bold {
+		font-weight: bolder;
+	}
+	&-large {
+		font-size: 16px;
+	}
+	&-small {
+		font-size: 12px;
+	}
+	&-x2-large {
+		font-size: 18px;
+	}
+	&-gray {
+		color: #999;
+	}
+	&-dark-gray {
+		color: #777;
+	}
+}

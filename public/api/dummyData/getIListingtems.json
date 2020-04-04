@@ -1,0 +1,38 @@
+{
+    "statusCode": 200,
+    "statusMessage": "OK",
+    "result": [
+        {
+            "id": 1031275,
+            "price": 22.42,
+            "stock": 9,
+            "expiration": "2022-04-01T00:00:00",
+            "product": {
+                "id": 37582,
+                "name": "Ocean Omega 3 Balık Yağı 500 mg 60 Kapsül",
+                "imageUrl": "https://staging-cdn.farmazon.com.tr//Photos/Product/37361cb7-7c35-47db-8c28-4420d3607434.jpg",
+                "listingCount": 76,
+                "listingMinPrice": 20.0
+            },
+            "basket": {
+                "id": 8973605,
+                "count": 1
+            }
+        },
+        {
+            "id": 1023748,
+            "price": 130.0,
+            "stock": 7,
+            "expiration": "2022-09-01T00:00:00",
+            "product": {
+                "id": 126949,
+                "name": "Plentyfert For Woman 30 Tablet",
+                "imageUrl": "https://staging-cdn.farmazon.com.tr//Photos/Product/3db7a5e6-6232-4cf8-8ee4-75bd1d6fcfb3.jpg",
+                "listingCount": 1,
+                "listingMinPrice": 130.0
+            },
+            "basket": null
+        }
+    ],
+    "errors": null
+}

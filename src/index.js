@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
+import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import 'moment/locale/tr';
+import store from './core/store';
+import './assets/styles/bootstrap-grid.scss'; // Import Bootstrap Grid's
+import './assets/styles/global.scss';
 import * as serviceWorker from './serviceWorker';
+import Root from './core/Root';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <StrictMode>
+        <Provider store={store}>
+            <Root />
+        </Provider>
+    </StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
