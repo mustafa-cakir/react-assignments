@@ -15,7 +15,7 @@ const Assignments2Container = () => {
                 <div className="col col-12 col-lg-9">
                     <div className="mb-5">
                         <h3 className="mt-4">
-                            printPrice(pruce: <span className="text-light">number</span>, toFixDecimal:{' '}
+                            printPrice(price: <span className="text-light">number</span>, toFixDecimal:{' '}
                             <span className="text-light">number</span>)
                         </h3>
                         <ul className="m-3">
