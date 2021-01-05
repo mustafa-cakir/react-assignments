@@ -1,7 +1,4 @@
-import React, { useEffect } from 'react';
-import axios from 'axios';
-import PropTypes from 'prop-types';
-import { GET__API_GET_LISTING_ITEMS } from '../../core/routes/apis';
+import React from 'react';
 
 const Items = () => {
     return (

@@ -1,7 +1,5 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import ErrorBoundary from '../components/common/ErrorBoundary';
 import routes from './routes/Routes';
 import Footer from '../components/Footer';
@@ -10,7 +8,7 @@ import Error from '../components/common/Error';
 
 const Header = React.lazy(() => import('../components/Header'));
 
-function Root({ userInfo }) {
+function Root() {
     return (
         <>
             <div className="App">
@@ -46,16 +44,4 @@ function Root({ userInfo }) {
     );
 }
 
-const mapStateToProps = (state) => ({
-    userInfo: state.userInfo,
-});
-
-Root.propTypes = {
-    userInfo: PropTypes.object,
-};
-
-Root.defaultProps = {
-    userInfo: {},
-};
-
-export default connect(mapStateToProps)(Root);
+export default Root;
