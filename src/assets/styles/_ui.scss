@@ -97,4 +97,10 @@
 	&-dark-gray {
 		color: #777;
 	}
+	&-price {
+		font-size: 18px;
+		.price-sub {
+			font-size: 14px;
+		}
+	}
 }

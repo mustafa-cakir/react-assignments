@@ -1,8 +1,7 @@
 import React from 'react';
-import moment from 'moment';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-const Item = ({ item }) => {
+const Item = () => {
     return (
         <div>
             Each item will <div>be here....</div>
@@ -10,13 +9,11 @@ const Item = ({ item }) => {
     );
 };
 
-Item.propTypes = {
-    //
-};
-
-Item.defaultProps = {
-    //
-};
+// Item.propTypes = {
+// };
+//
+// Item.defaultProps = {
+// };
 
 export default Item;
 

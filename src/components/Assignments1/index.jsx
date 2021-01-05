@@ -17,6 +17,10 @@ const Assignments1Container = () => {
                 <div className="col col-12 col-lg-9">
                     <h3 className="mt-4 mb-2">Expected Layout & Functionality:</h3>
                     <img src={gifAssignment1} alt="GIF Assignment1" />
+                    <h3 className="mt-4 mb-2">Result:</h3>
+                    <div className="assignment1">
+                        <Items />
+                    </div>
                 </div>
                 <div className="col col-12 col-lg-3">
                     <h3 className="mt-4 mb-2">Tips:</h3>
@@ -42,11 +46,13 @@ const Assignments1Container = () => {
                             <Icons name="okay" /> Each file has its own description at the bottom
                         </li>
                     </ul>
+                    <h3 className="mt-4 mb-2">Bonus:</h3>
+                    <ul>
+                        <li className="mb-2">
+                            <Icons name="okay" /> Make component responsive using only brootstrap classes.
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <h3 className="mt-4 mb-2">Result:</h3>
-            <div className="assignment1">
-                <Items />
             </div>
         </>
     );
