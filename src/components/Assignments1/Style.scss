@@ -3,10 +3,66 @@
     background: #fff;
     max-width: 820px;
     margin-bottom: 20px;
-    .item {
-        // item child component styles will go here...
+    .header {
+        color: #989898;
+        font-weight: 400;
+        border-bottom: 1px solid #dadadb;
     }
-    .addtocart {
-        // addtocart child component styles will go here...
+    .item {
+        color: #010101;
+        .product-name {
+            .link {
+                display: none;
+                position: absolute;
+            }
+        }
+        &:hover {
+            .product-name {
+                .link {
+                    display: block;
+                }
+            }
+        }
+    }
+    .add-to-chart-container {
+        position: relative;
+        min-width: 110px;
+        .add-to-chart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #feab01;
+            padding: 5px;
+            border-radius: 10px;
+            height: 33px;
+            color: #fff;
+            width: 100%;
+        }
+        input {
+            max-width: 40px;
+            max-height: 27px;
+        }
+        .btn {
+            background-image: none;
+            padding: 5px;
+            &:focus {
+                box-shadow: none;
+            }
+            &:hover {
+                background: #ef9f02;
+                color: #fff;
+            }
+        }
+    }
+    .add-to-chart__info-message {
+        color: #a3a3a3;
+        font-size: 12px;
+        position: absolute;
+        top: -16px;
+        width: 100%;
+        text-align: center;
+        &.danger--message {
+            color: #ea6d6c;
+        }
     }
 }

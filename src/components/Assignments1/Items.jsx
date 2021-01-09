@@ -1,12 +1,91 @@
-import React from 'react';
-// import Loading from '../common/Loading';
-// import axios from 'axios';
-// import { GET__API_GET_LISTING_ITEMS } from '../../core/routes/apis';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+import Loading from '../common/Loading';
+import Error from '../common/Error';
+
+import { GET__API_GET_LISTING_ITEMS } from '../../core/routes/apis';
+
+import Item from './Item';
+
+const LOADING = 1;
+const FAILED = 2;
+const LOADED = 3;
 
 const Items = () => {
+    const [itemsReq, setItemsReq] = useState({
+        products: [],
+        reason: null,
+        status: LOADING,
+    });
+    const { products, reason, status } = itemsReq;
+
+    const getItems = () => {
+        axios.get(GET__API_GET_LISTING_ITEMS)
+            .then(({ data }) => {
+                setItemsReq({
+                    products: data.result,
+                    reason: data.errors,
+                    status: LOADED,
+                })
+            })
+            .catch(error => {
+                setItemsReq({
+                    products: [],
+                    reason: error,
+                    status: FAILED,
+                })
+            });
+    }
+
+    useEffect(() => {
+        getItems();
+    }, []);
+
+    const renderItemList = () => products.map(item => {
+        const { id, expiration, price, product, basket, stock } = item;
+
+        return (
+            <Item
+                key={id}
+                expiration={expiration}
+                price={price}
+                product={product}
+                stock={stock}
+                basket={basket}
+            />
+        )
+    });
+
     return (
         <div className="p-3">
-            <code>your code will be here...</code>
+            {status === LOADING &&
+                <Loading />
+            }
+            {reason &&
+                <Error message={reason} />
+            }
+            {(status === LOADED && reason === null && products.length > 0) &&
+                <div className="container p-0">
+                    <div className="row header pb-2 pl-3 pr-1">
+                        <div className="col-1" />
+                        <div className="col-4">
+                            Ürün Adı
+                        </div>
+                        <div className="col-2">
+                            Miad
+                        </div>
+                        <div className="col-1 mr-4 mr-md-0">
+                            Stok
+                        </div>
+                        <div className="col-2 text-right">
+                            Fiyat
+                        </div>
+                        <div className="col-2" />
+                    </div>
+                    {renderItemList()}
+                </div>
+            }
         </div>
     );
 };
